@@ -1,0 +1,20 @@
+import sqlite3
+con=sqlite3.connect('basededatos.db')
+
+cursorObjetucho=con.cursor()
+:memory:
+
+import sqlite3
+from sqlite3 import Error
+def sql_conexiones():
+	try:
+		con_sqlite3.conectar(':memory:')
+		print("Conexión establecida: La base de datos se ha creado en la memoria")
+	except Error:
+		print(Error)
+		
+	finally:
+		con.close()
+
+sql_conexiones()
+
